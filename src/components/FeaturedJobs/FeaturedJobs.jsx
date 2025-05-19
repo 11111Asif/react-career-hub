@@ -13,9 +13,9 @@ const FeaturedJobs = () => {
         }, [])
 
     return (
-        <div>
+        <div className="mt-10">
             <div className="text-center">
-                <h2 className="text-4xl">Featured Jobs: {jobs.length}</h2>
+                <h2 className="text-4xl">Featured Jobs</h2>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
             <div className="grid md:grid-cols-2 gap-6 mt-4 lg:mx-20">
@@ -25,7 +25,7 @@ const FeaturedJobs = () => {
             </div>
             <div className={ dataLength === jobs.length && 'hidden'}>
                 <button onClick={()=>setDataLength(jobs.length)} 
-                className="text-2xl justify-center w-[174px] h-[50px] bg-[#7e90fe] text-white rounded-lg">See All Jobs</button>
+                className="text-2xl mt-6 mb-6 justify-center w-[174px] h-[50px] bg-[#7e90fe] text-white rounded-lg">See All Jobs</button>
             </div>
         </div>
     );
