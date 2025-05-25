@@ -12,6 +12,7 @@ import Home from './components/Home/Home.jsx';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import JobDetails from './components/JobDetails/JobDetails.jsx';
+import Map from './components/Map/Map.jsx';
 
 
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
         path: "/job/:id",
         element: <JobDetails></JobDetails>,
         loader: ()=> fetch('../jobs.json')
+      },
+      {
+        path: "/map",
+        element: <Map></Map>
       },
     ]
   },
