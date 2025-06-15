@@ -60,7 +60,7 @@ const AppliedJobs = () => {
                 {
                     displayJobs.map(job => <li key={job.id}>
                         <div className="flex mb-8 border-2 w-auto rounded-md bg-slate-100">
-                            <img className="py-5 px-5 bg-[#f4f4f4]" src={job.logo} alt="" />
+                            <img className="py-5 px-5 bg-[#f4f4f4] w-[300px]" src={job.logo} alt="" />
                             <div className="py-5 px-5 ">
                                 <span className="text-2xl ml-5">{job.job_title}</span>
                                 <p className="text-xl ml-5">{job.company_name}</p>
